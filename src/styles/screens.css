@@ -1,0 +1,190 @@
+/* Common styles */
+.screen-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.action-button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.action-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Screen 1: Articles List */
+.language-selector-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.language-selector {
+  padding: 5px;
+  border: 1px solid #000;
+  width: 150px;
+}
+
+.articles-list {
+  border: 1px solid #000;
+}
+
+.article-item {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.article-item:last-child {
+  border-bottom: none;
+}
+
+.article-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Screen 2: Article Detail */
+.article-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article-content-container {
+  display: flex;
+  gap: 20px;
+  height: 300px;
+}
+
+.results-sidebar {
+  width: 150px;
+  border: 1px solid #000;
+  overflow-y: auto;
+}
+
+.result-item {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.result-item:last-child {
+  border-bottom: none;
+}
+
+.result-item:hover {
+  background-color: #f5f5f5;
+}
+
+.article-content {
+  flex: 1;
+  border: 1px solid #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-text {
+  text-align: center;
+}
+
+.result-preview {
+  width: 150px;
+  border: 1px solid #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Screen 3: Article Result Detail */
+.result-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.result-detail-content {
+  display: flex;
+  gap: 20px;
+  height: 300px;
+}
+
+.processing-steps {
+  width: 150px;
+  border: 1px solid #000;
+}
+
+.processing-step {
+  padding: 10px;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+
+.processing-step:last-child {
+  border-bottom: none;
+}
+
+.processing-step:hover {
+  background-color: #f5f5f5;
+}
+
+.processing-step.selected {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.source-text {
+  flex: 1;
+  border: 1px solid #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.source-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-result {
+  width: 150px;
+  border: 1px solid #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-result-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
