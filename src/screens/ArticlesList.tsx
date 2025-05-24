@@ -36,6 +36,12 @@ const ArticlesList = () => {
     navigate(`/article/${articleId}`)
   }
 
+  const handleAddArticle = (e: React.MouseEvent) => {
+    e.stopPropagation()
+    //имплементация добавления статьи
+    alert('Добавление новой статьи')
+  }
+
   return (
     <div className="screen-container">
       <h1>Список статей</h1>
@@ -64,6 +70,12 @@ const ArticlesList = () => {
         </div>
 
         <div className="buttons-container">
+          <button 
+            className="action-button"
+            onClick={handleAddArticle}
+          >
+            Добавить статью
+          </button>
           <button 
             className="action-button"
             onClick={(e) => handleDeleteArticle(e, 1)}
